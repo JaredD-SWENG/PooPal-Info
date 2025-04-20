@@ -80,7 +80,7 @@ const App = () => {
                 <div className="aspect-w-16 aspect-h-9 rounded-lg mb-6 overflow-hidden">
                   <iframe 
                     className="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/5qlUNa8Q0cg" 
+                    src="https://www.youtube.com/embed/s5pUFncUx-8" 
                     title="PooPal Demo Video"
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -409,7 +409,7 @@ const App = () => {
             <div className="aspect-w-16 aspect-h-9 bg-white shadow-lg rounded-xl overflow-hidden">
               <iframe 
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/5qlUNa8Q0cg" 
+                src="https://www.youtube.com/embed/s5pUFncUx-8" 
                 title="PooPal Demo Video"
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
