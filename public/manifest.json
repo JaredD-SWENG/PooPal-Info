@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "PooPal",
+  "name": "PooPal: Your Smart Stool Tool!",
   "icons": [
     {
       "src": "favicon.ico",
