@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Award, Shield, Activity, ChevronRight, Download, Menu, X, Play, ExternalLink, Calendar, BarChart2, MessageSquare, FileText, Wrench, WrenchIcon, AppleIcon, PhoneIcon, SmartphoneIcon } from 'lucide-react';
+import { Home, Award, Shield, Activity, ChevronRight, Download, Menu, X, Play, ExternalLink, Calendar, BarChart2, MessageSquare, FileText, Wrench, WrenchIcon, AppleIcon, PhoneIcon, SmartphoneIcon, MedalIcon } from 'lucide-react';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -96,6 +96,58 @@ const App = () => {
                   <span className="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">Beta</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* PooPal GIF Section - Enhanced */}
+      <section className="py-16 px-6 bg-gradient-to-br from-slate-100 to-emerald-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-800">Smart Tracking at Your Fingertips!</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto mt-2">
+              Our mobile app puts gut health tracking at your fingertips with an intuitive interface
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="max-w-xs">
+              <div className="bg-white p-2 rounded-3xl shadow-lg border-4 border-slate-200">
+                <img 
+                  src="/poopal.gif" 
+                  alt="PooPal Mobile App Demo" 
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
+            </div>
+            <div className="max-w-sm text-left">
+              <h3 className="text-xl font-semibold mb-3 text-emerald-700">Effortless Tracking</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
+                    <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
+                  </div>
+                  <span>View your gut health logs in a clean calendar interface</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
+                    <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
+                  </div>
+                  <span>Navigate between daily, weekly and monthly views</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
+                    <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
+                  </div>
+                  <span>Get AI-powered insights about your digestive patterns</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
+                    <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
+                  </div>
+                  <span>Share reports with healthcare providers with one tap</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -442,29 +494,29 @@ const App = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-600 bg-opacity-80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-emerald-400">
               <h3 className="text-xl font-semibold mb-4">For Individuals</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="bg-white bg-opacity-20 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-white bg-opacity-30 p-1 rounded-full mr-3 mt-1">
                     <div className="bg-white w-2 h-2 rounded-full"></div>
                   </div>
                   <span>Elimination of manual tracking and visual inspection</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-white bg-opacity-20 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-white bg-opacity-30 p-1 rounded-full mr-3 mt-1">
                     <div className="bg-white w-2 h-2 rounded-full"></div>
                   </div>
                   <span>Reduced psychological burden and increased compliance</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-white bg-opacity-20 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-white bg-opacity-30 p-1 rounded-full mr-3 mt-1">
                     <div className="bg-white w-2 h-2 rounded-full"></div>
                   </div>
                   <span>Continuous health monitoring without user intervention</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-white bg-opacity-20 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-white bg-opacity-30 p-1 rounded-full mr-3 mt-1">
                     <div className="bg-white w-2 h-2 rounded-full"></div>
                   </div>
                   <span>Early detection of potential health issues</span>
@@ -472,29 +524,29 @@ const App = () => {
               </ul>
             </div>
             
-            <div className="bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-600 bg-opacity-80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-emerald-400">
               <h3 className="text-xl font-semibold mb-4">For Healthcare Providers</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="bg-white bg-opacity-20 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-white bg-opacity-30 p-1 rounded-full mr-3 mt-1">
                     <div className="bg-white w-2 h-2 rounded-full"></div>
                   </div>
                   <span>Accurate, consistent longitudinal data</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-white bg-opacity-20 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-white bg-opacity-30 p-1 rounded-full mr-3 mt-1">
                     <div className="bg-white w-2 h-2 rounded-full"></div>
                   </div>
                   <span>Improved diagnosis and treatment monitoring</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-white bg-opacity-20 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-white bg-opacity-30 p-1 rounded-full mr-3 mt-1">
                     <div className="bg-white w-2 h-2 rounded-full"></div>
                   </div>
                   <span>Easy integration with electronic health records</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-white bg-opacity-20 p-1 rounded-full mr-3 mt-1">
+                  <div className="bg-white bg-opacity-30 p-1 rounded-full mr-3 mt-1">
                     <div className="bg-white w-2 h-2 rounded-full"></div>
                   </div>
                   <span>Data-driven insights for personalized care plans</span>
@@ -504,6 +556,52 @@ const App = () => {
           </div>
         </div>
       </section>
+      
+              {/* Awards and Recognition Section - NEW */}
+      <section className="py-20 px-6 bg-slate-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">Awards & Recognition</h2>
+          </div>
+          
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+              {/* Award 1 */}
+              <div className="bg-white rounded-xl shadow-md overflow-hidden transition-all hover:shadow-lg">
+                <div className="h-24 bg-emerald-500 flex items-center justify-center">
+                  <MedalIcon className="text-white" size={56} />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="text-lg font-semibold">Penn State Nittany AI Challenge - 1st Place</h3>
+                    <span className="text-emerald-500 text-sm font-medium">2025</span>
+                  </div>
+                  <p className="text-slate-600 text-sm">
+                    Won 1st place in Penn State's premier Nittany AI Challenge - AI for Good. Awarded $5,500 in funding to continue the project. 
+                  </p>
+                </div>
+              </div>
+              
+              {/* Award 2 */}
+              <div className="bg-white rounded-xl shadow-md overflow-hidden transition-all hover:shadow-lg">
+                <div className="h-24 bg-slate-700 flex items-center justify-center">
+                  <Award className="text-white" size={56} />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="text-lg font-semibold">PIT-UN Grant</h3>
+                    <span className="text-emerald-500 text-sm font-medium">2025</span>
+                  </div>
+                  <p className="text-slate-600 text-sm">
+                    Received a grant worth $3,750 from The Public Interest Technology University Network.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       
       {/* Footer */}
       <footer className="bg-slate-800 text-white py-10 px-6">
