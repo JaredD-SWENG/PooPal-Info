@@ -173,39 +173,53 @@ const App = () => {
             </div>
             
             <div className="bg-slate-50 rounded-xl p-8 border border-slate-200 shadow-sm">
-              <p className="text-lg mb-6">
-                The hardware consists of a Raspberry Pi Zero with a camera and three color-coded buttons housed in a custom 3D-printed enclosure.
-              </p>
+              <div className="flex flex-col md:flex-row">
+                <div className="md:w-1/2 mb-6 md:mb-0 md:pr-6">
+                  <p className="text-lg mb-6">
+                    The hardware consists of a Raspberry Pi Zero with a camera and three color-coded buttons housed in a custom 3D-printed enclosure.
+                  </p>
+                  
+                  <h4 className="text-xl font-semibold mb-4">Features:</h4>
+                  <ul className="space-y-3 mb-4">
+                    <li className="flex items-start">
+                      <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
+                        <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
+                      </div>
+                      <span>Color-coded buttons (red, green, yellow) for family member identification</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
+                        <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
+                      </div>
+                      <span>HD Low-light Camera for capturing stool samples</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
+                        <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
+                      </div>
+                      <span>LED indicator for status feedback</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
+                        <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
+                      </div>
+                      <span>Firebase integration for secure image storage and classification</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="md:w-1/2">
+                  <div className="bg-white p-3 rounded-lg shadow-md border border-slate-200">
+                    <img 
+                      src="/hardware_pic.jpg" 
+                      alt="PooPal Hardware" 
+                      className="w-full h-auto rounded-md object-cover"
+                    />
+                    <p className="text-sm text-slate-500 mt-2 text-center">The PooPal hardware device installed on a toilet</p>
+                  </div>
+                </div>
+              </div>
               
-              <h4 className="text-xl font-semibold mb-4">Features:</h4>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
-                    <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
-                  </div>
-                  <span>Color-coded buttons (red, green, yellow) for family member identification</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
-                    <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
-                  </div>
-                  <span>HD Low-light Camera for capturing stool samples</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
-                    <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
-                  </div>
-                  <span>LED indicator for status feedback</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1">
-                    <div className="bg-emerald-500 w-2 h-2 rounded-full"></div>
-                  </div>
-                  <span>Firebase integration for secure image storage and classification</span>
-                </li>
-              </ul>
-              
-              <h4 className="text-xl font-semibold mb-4">How it works:</h4>
+              <h4 className="text-xl font-semibold mb-8 mt-8">How it works:</h4>
               <ol className="space-y-3">
                 <li className="flex items-start">
                   <div className="bg-emerald-200 px-2 py-1 rounded-full mr-3 text-emerald-800 font-medium text-sm">1</div>
@@ -568,24 +582,31 @@ const App = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
               {/* Award 1 */}
               <div className="bg-white rounded-xl shadow-md overflow-hidden transition-all hover:shadow-lg">
-                <div className="h-24 bg-emerald-500 flex items-center justify-center">
-                  <MedalIcon className="text-white" size={56} />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-lg font-semibold">Penn State Nittany AI Challenge - 1st Place</h3>
-                    <span className="text-emerald-500 text-sm font-medium">2025</span>
+                <a 
+                  href="https://www.psu.edu/news/students/story/student-teams-win-awards-their-ai-problem-solving-ideas?utm_audience=Students&" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="h-64 bg-emerald-500 flex items-center justify-center overflow-hidden">
+                    <img src="/challenge_pic.jpg" alt="Nittany AI Challenge Award" className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-slate-600 text-sm">
-                    Won 1st place in Penn State's premier Nittany AI Challenge - AI for Good. Awarded $5,500 in funding to continue the project. 
-                  </p>
-                </div>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-3">
+                      <h3 className="text-lg font-semibold">Penn State Nittany AI Challenge - 1st Place</h3>
+                      <span className="text-emerald-500 text-sm font-medium">2025</span>
+                    </div>
+                    <p className="text-slate-600 text-sm">
+                      Won 1st place in Penn State's premier Nittany AI Challenge - AI for Good. Awarded $5,500 in funding to continue the project. 
+                    </p>
+                  </div>
+                </a>
               </div>
               
               {/* Award 2 */}
               <div className="bg-white rounded-xl shadow-md overflow-hidden transition-all hover:shadow-lg">
-                <div className="h-24 bg-slate-700 flex items-center justify-center">
-                  <Award className="text-white" size={56} />
+                <div className="h-64 bg-slate-700 flex items-center justify-center overflow-hidden">
+                  <img src="/grant_pic.jpg" alt="PIT-UN Grant" className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
