@@ -44,7 +44,6 @@ const App = () => {
               <a href="#features" className="font-medium hover:text-emerald-500 transition" onClick={toggleMenu}>Features</a>
               <a href="#technology" className="font-medium hover:text-emerald-500 transition" onClick={toggleMenu}>Technology</a>
               <a href="#benefits" className="font-medium hover:text-emerald-500 transition" onClick={toggleMenu}>Benefits</a>
-              <a href="#download" className="font-medium hover:text-emerald-500 transition" onClick={toggleMenu}>Download</a>
               <button className="hidden md:block bg-emerald-500 hover:bg-emerald-600 text-white py-2 px-6 rounded-md font-medium transition">
                 <a href="#contact" className="text-white">Contact Us</a>
               </button>
@@ -640,14 +639,6 @@ const App = () => {
               </p>
             </div>
             
-            <div>
-              <h4 className="font-medium mb-4">Company</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li><a href="#" className="hover:text-white transition">About Us</a></li>
-                <li><a href="#" className="hover:text-white transition">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition">Press</a></li>
-              </ul>
-            </div>
             
             <div id="contact">
               <div>
