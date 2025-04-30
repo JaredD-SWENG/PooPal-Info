@@ -658,11 +658,11 @@ const App = () => {
               <ul className="space-y-2 text-slate-400">
                 <li className="flex items-center">
                   <span className="mr-2"></span>
-                  <span> <a href="mailto:jjd6385@psu.edu" className="text-emerald-400 hover:text-white transition">Jared Daniel</a></span>
+                  <span> <a href="mailto:jared.daniel2021@gmail.com" className="text-emerald-400 hover:text-white transition">Jared Daniel</a></span>
                 </li>
                 <li className="flex items-center">
                   <span className="mr-2"></span>
-                  <span> <a href="mailto:aad5609@psu.edu" className="text-emerald-400 hover:text-white transition">Alysse Deterville</a></span>
+                  <span> <a href="mailto:alyssedeterville@gmail.com" className="text-emerald-400 hover:text-white transition">Alysse Deterville</a></span>
                 </li>
               </ul>
             </div>
